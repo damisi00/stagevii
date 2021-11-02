@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API and DOM manipulation</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="my-5 container  ">
+        <div class="row">
+            <h4 class="mb-3 text-center display-3"></h4>
+            <div class="col-md-6 m-auto">
+                <form action="" class=" bg-light my-5 form-group">
+                    <div class="name my-3">
+                        <div class="p-4">
+                            <label for="name-field" class=" form-label me-3 col-4">Name</label>
+                            <input type="text"class="form-control" id="name-field" placeholder="Enter name" required >
+                        </div>
+                    </div>
+                    <div class="text mb-3">
+                        <div class="p-4">
+                            <label for="text-area" class=" form-label me-3 col-4">Post a Message</label>
+                            <textarea class=" form-control " id="text-area" rows="5" placeholder="Enter text"></textarea>
+                        </div>
+                    </div>
+                    <div class="btn-container d-flex justify-content-end align-items-center me-4"><button type="submit" class=" btn btn-success mb-3" onsubmit="createPosts()">Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="pb-5 ">
+        <h4 class="post-display text-center mb-3 display-3">All posts</h4>
+        <div class="row g-3 width-90 mx-auto" id="layout">
+            <div class="col-md-4 mb-3 crd">
+                <a href="post_display.html" class=" text-black text-decoration-none" ><div class="card h-100">
+                  <div class="card-header">
+                   Featured
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="post_display.html" class="btn btn-info">View</a>
+                  </div>
+                </div></a>
+            </div>
+        </div>
+    </section>
+    <script src="./js/bootstrap.min.js"></script>
+   <script src="./js/script.js"></script> 
+</body>
+</html>
